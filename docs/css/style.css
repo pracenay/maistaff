@@ -621,6 +621,12 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.main-content.bg-1 {
+  background-color: #eeeeee;
+}
+.main-content.bg-2 {
+  background-color: #ffffff;
+}
 
 .breadcrumbs {
   padding: 30px 0;
@@ -996,4 +1002,87 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+.title-h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.subtitle-h1 {
+  font-size: 18px;
+}
+
+.content__header {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 36px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 36px;
+}
+.content__item__text, .content__item__image {
+  width: 50%;
+}
+.content__item__image {
+  padding-left: 18px;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.content__item__image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content__item__text h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.content__item__text p + p {
+  margin-top: 8px;
+}
+
+.content__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content__item:nth-child(2n) .content__item__image {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 18px;
 }
