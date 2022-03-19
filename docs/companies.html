@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display&display=swap" rel="stylesheet" /> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -20,240 +22,106 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/companies.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>Document</title>
 	</head>
-	<body class="bg1">
-		<nav class="navigation non-transparent">
-			<a href="/" class="navigation__logo"> <span>Maistaff</span> </a>
-			<ul class="navigation__list">
-				<li class="navigation__list__item">
-					<a href="/" class="navigation__list__link"
-						><span
-							><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="1000" height="600" style="cursor: default">
-								<clipPath id="s">
-									<path d="M0,0v30h50v-30z" />
-								</clipPath>
-								<clipPath id="t">
-									<path d="M25,15h25v15zv15h-25zh-25v-15zv-15h25z" />
-								</clipPath>
-								<g clip-path="url(#s)">
-									<path d="M0,0v30h50v-30z" fill="#012169" />
-									<path d="M0,0 50,30M50,0 0,30" stroke="#fff" stroke-width="6" />
-									<path d="M0,0 50,30M50,0 0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4" />
-									<path d="M-1 11h22v-12h8v12h22v8h-22v12h-8v-12h-22z" fill="#C8102E" stroke="#FFF" stroke-width="2" />
-								</g></svg
-						></span>
-						Language</a
-					>
-				</li>
-				<li class="navigation__list__item"><a href="/" class="navigation__list__link">Log In</a></li>
-				<li class="navigation__list__item"><a href="/" class="navigation__list__link">Create an account</a></li>
-			</ul>
-			<div class="burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-		<nav class="mob-nav">
-			<ul class="mob-nav__list">
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Search</a></li>
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Free text</a></li>
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Industry</a></li>
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
-
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Log In</a></li>
-				<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Create an account</a></li>
-				<li class="mob-nav__list__item">
-					<a href="/" class="mob-nav__list__link"
-						><span
-							><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="1000" height="600" style="cursor: default">
-								<clipPath id="s">
-									<path d="M0,0v30h50v-30z" />
-								</clipPath>
-								<clipPath id="t">
-									<path d="M25,15h25v15zv15h-25zh-25v-15zv-15h25z" />
-								</clipPath>
-								<g clip-path="url(#s)">
-									<path d="M0,0v30h50v-30z" fill="#012169" />
-									<path d="M0,0 50,30M50,0 0,30" stroke="#fff" stroke-width="6" />
-									<path d="M0,0 50,30M50,0 0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4" />
-									<path d="M-1 11h22v-12h8v12h22v8h-22v12h-8v-12h-22z" fill="#C8102E" stroke="#FFF" stroke-width="2" />
-								</g></svg
-						></span>
-						Language</a
-					>
-				</li>
-			</ul>
-		</nav>
-
-		<main class="main-content bg-1">
-			<div class="wrapper">
-				<div class="breadcrumbs">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Home</a></li>
-						<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Some page</a></li>
-						<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link active">Kek</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content__columns">
-						<div class="content__column content__search">
-							<div class="search__title">
-								<h2>We found 20 results matching your search:</h2>
-							</div>
-							<div class="search__input">
-								<div class="search__input-box">
-									<input type="text" placeholder="Company name..." />
-									<span><img src="./img/loop.png" alt="" /></span>
-								</div>
-
-								<button>Search</button>
-							</div>
-							<div class="search__buttons">
-								<button class="btn btn-sort">Sort by</button>
-								<button class="btn btn-recommend">Recommended</button>
-							</div>
-							<div class="search__result__block">
-								<ul class="search__result__list">
-									<li class="search__result__item">
-										<a class="search__result__link" href="">
-											<div class="result__data">
-												<div class="result__image">
-													<img src="./img/quote.png" alt="" />
-												</div>
-												<ul class="result__info">
-													<li class="result__info__item result__info__item--big">Company Name</li>
-													<li class="result__info__item"><span>Address: </span>Avenue Champs-Elysees</li>
-													<li class="result__info__item"><span>Industry: </span>Industry</li>
-													<li class="result__info__item"><span>Specialization: </span> Specialization</li>
-													<li class="result__info__item"><span>Production capabilities: </span>Specialization</li>
-												</ul>
-											</div>
-											<div class="result__description">
-												<div class="result__description__text">
-													<h3>Short introduction</h3>
-													<p>Why you should choose us. List the USP's of your company.</p>
-													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="search__result__item">
-										<a class="search__result__link" href="">
-											<div class="result__data">
-												<div class="result__image">
-													<img src="./img/quote.png" alt="" />
-												</div>
-												<ul class="result__info">
-													<li class="result__info__item result__info__item--big">Company Name</li>
-													<li class="result__info__item"><span>Address: </span>Avenue Champs-Elysees</li>
-													<li class="result__info__item"><span>Industry: </span>Industry</li>
-													<li class="result__info__item"><span>Specialization: </span> Specialization</li>
-													<li class="result__info__item"><span>Production capabilities: </span>Specialization</li>
-												</ul>
-											</div>
-											<div class="result__description">
-												<div class="result__description__text">
-													<h3>Short introduction</h3>
-													<p>Why you should choose us. List the USP's of your company.</p>
-													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="search__result__item">
-										<a class="search__result__link" href="">
-											<div class="result__data">
-												<div class="result__image">
-													<img src="./img/quote.png" alt="" />
-												</div>
-												<ul class="result__info">
-													<li class="result__info__item result__info__item--big">Company Name</li>
-													<li class="result__info__item"><span>Address: </span>Avenue Champs-Elysees</li>
-													<li class="result__info__item"><span>Industry: </span>Industry</li>
-													<li class="result__info__item"><span>Specialization: </span> Specialization</li>
-													<li class="result__info__item"><span>Production capabilities: </span>Specialization</li>
-												</ul>
-											</div>
-											<div class="result__description">
-												<div class="result__description__text">
-													<h3>Short introduction</h3>
-													<p>Why you should choose us. List the USP's of your company.</p>
-													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="search__result__item">
-										<a class="search__result__link" href="">
-											<div class="result__data">
-												<div class="result__image">
-													<img src="./img/quote.png" alt="" />
-												</div>
-												<ul class="result__info">
-													<li class="result__info__item result__info__item--big">Company Name</li>
-													<li class="result__info__item"><span>Address: </span>Avenue Champs-Elysees</li>
-													<li class="result__info__item"><span>Industry: </span>Industry</li>
-													<li class="result__info__item"><span>Specialization: </span> Specialization</li>
-													<li class="result__info__item"><span>Production capabilities: </span>Specialization</li>
-												</ul>
-											</div>
-											<div class="result__description">
-												<div class="result__description__text">
-													<h3>Short introduction</h3>
-													<p>Why you should choose us. List the USP's of your company.</p>
-													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
-												</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="content__column content__map">
-							<div class="content__map__block">
-								<img src="./img/map.jpg" alt="" />
-							</div>
-						</div>
+	<body>
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="/">Maistaff</a>
 					</div>
-					<div class="pagination">
-						<ul class="pagination__list">
-							<li class="pagination__item">
-								<a class="pagination__link prev-btn" href=""><i class="fa-solid fa-chevron-left"></i></a>
-							</li>
-							<li class="pagination__item">
-								<a class="pagination__link" href="">1</a>
-							</li>
-							<li class="pagination__item active">
-								<a class="pagination__link" href="">2</a>
-							</li>
-							<li class="pagination__item pagination-dots">
-								<a class="pagination__link" href="">...</a>
-							</li>
-							<li class="pagination__item">
-								<a class="pagination__link active" href="">4</a>
-							</li>
-							<li class="pagination__item">
-								<a class="pagination__link next-btn" href=""><i class="fa-solid fa-chevron-right"></i></a>
-							</li>
+					<nav class="header__navigation navigation">
+						<ul class="navigation__list">
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Free text</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Industry</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">My page</a></li>
 						</ul>
+						<div class="navigation__search">
+							<div class="input__box">
+								<input type="text" placeholder="Search..." />
+								<i class="fa-solid fa-magnifying-glass search__icon"></i>
+							</div>
+						</div>
+						<div class="navigation__language switcher">
+							<ul class="language__list">
+								<li href="">
+									<i class="fa-solid fa-earth-americas language__icon"></i>
+									<a href="">EN</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="mob-nav">
+						<ul class="mob-nav__list">
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Free text</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Industry</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">My Page</a></li>
+						</ul>
+						<div class="navigation__search">
+							<div class="input__box">
+								<input type="text" placeholder="Search..." />
+								<i class="fa-solid fa-magnifying-glass search__icon"></i>
+							</div>
+						</div>
+						<div class="navigation__language switcher">
+							<ul class="language__list">
+								<li href="">
+									<i class="fa-solid fa-earth-americas language__icon"></i>
+									<a href="">EN</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</main>
+		</header>
 
 		<footer class="footer">
-			<ul class="footer__navigation">
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">About Us</a></li>
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">Contact</a></li>
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">Careers</a></li>
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">FAQ</a></li>
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">Terms</a></li>
-				<li class="footer__navigation__item"><a href="" class="footer__navigation__link">Privacy</a></li>
-			</ul>
+			<div class="wrapper">
+				<div class="footer__container">
+					<div class="footer__logo">Maistaff</div>
+					<nav class="footer__nav">
+						<ul class="footer__list">
+							<ul class="footer__list">
+								<li class="footer__list__item"><a href="/" class="footer__list__link"> Free text</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Industry</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">My page</a></li>
+							</ul>
+						</ul>
+					</nav>
+					<div class="footer__copyright">
+						<span>2022 &copy; Admiral Studios</span>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<script src="./js/script.js"></script>
 	</body>
