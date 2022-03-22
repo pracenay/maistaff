@@ -952,3 +952,38 @@ body {
     text-align: center;
   }
 }
+.careers {
+  min-height: 500px;
+  height: 100vh;
+  background: url("../img/careers-bg.jpg");
+  padding-top: 120px;
+}
+.careers .container {
+  padding: 0 30px;
+}
+
+.careers__title,
+.careers__desc {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+.careers__title {
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.careers__desc {
+  max-width: 450px;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .careers__title,
+.careers__desc {
+    text-align: center;
+  }
+}
