@@ -1621,3 +1621,55 @@ main {
   top: 10px;
   cursor: pointer;
 }
+
+.careers {
+  min-height: 500px;
+  height: calc(100vh - 79px);
+  background: url("../img/careers-bg.jpg");
+  padding-top: 120px;
+}
+.careers .container {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.careers__block {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 30px;
+}
+.careers__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.careers__title,
+.careers__desc {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.careers__desc {
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .careers__title,
+.careers__desc {
+    text-align: center;
+  }
+}
