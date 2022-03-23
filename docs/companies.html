@@ -101,7 +101,148 @@
 				</div>
 			</div>
 		</header>
-
+		<main>
+			<section class="section-companies">
+				<div class="wrapper">
+					<div class="companies">
+						<div class="companies__column">
+							<div class="companies__block">
+								<div class="companies__filter__search-bar">
+									<div class="input__box">
+										<input type="text" placeholder="Search..." />
+										<button><i class="fa-solid fa-magnifying-glass"></i></button>
+									</div>
+								</div>
+								<div class="companies__filter__sort-bar">
+									<select id="year">
+										<option value="hide">Sort by</option>
+										<option value="2010">Recommended</option>
+										<option value="2011">Rating</option>
+										<option value="2012">Featured</option>
+									</select>
+								</div>
+								<div class="search__result">
+									<ul class="search__list">
+										<li class="search__item">
+											<div class="search__item__card search__card">
+												<div class="search__card__body">
+													<div class="search__card__image">
+														<img src="./img/quote.png" alt="" />
+													</div>
+													<ul class="search__card__data">
+														<li class="search__card__item search__card__item--bold">Company name</li>
+														<li class="search__card__item"><span>Address:</span>Some address</li>
+														<li class="search__card__item"><span>Industry:</span> Some address</li>
+														<li class="search__card__item"><span>Specialization:</span>Some address</li>
+														<li class="search__card__item"><span>Production capabilities:</span>Some address</li>
+													</ul>
+												</div>
+												<div class="search__card__desc">
+													<h3>Short introduction</h3>
+													<p>Why you should choose us. List the USP's of your company.</p>
+													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
+												</div>
+												<div class="search__buttons">
+													<a class="btn btn--light" href="">Read more</a>
+													<a class="btn btn--dark" href="">Watch on map</a>
+												</div>
+											</div>
+										</li>
+										<li class="search__item">
+											<div class="search__item__card search__card">
+												<div class="search__card__body">
+													<div class="search__card__image">
+														<img src="./img/nvidia.png" alt="" />
+													</div>
+													<ul class="search__card__data">
+														<li class="search__card__item search__card__item--bold">Company name</li>
+														<li class="search__card__item"><span>Address:</span>Some address</li>
+														<li class="search__card__item"><span>Industry:</span> Some address</li>
+														<li class="search__card__item"><span>Specialization:</span>Some address</li>
+														<li class="search__card__item"><span>Production capabilities:</span>Some address</li>
+													</ul>
+												</div>
+												<div class="search__card__desc">
+													<h3>Short introduction</h3>
+													<p>Why you should choose us. List the USP's of your company.</p>
+													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
+												</div>
+												<div class="search__buttons">
+													<a class="btn btn--light" href="">Read more</a>
+													<a class="btn btn--dark" href="">Watch on map</a>
+												</div>
+											</div>
+										</li>
+										<li class="search__item">
+											<div class="search__item__card search__card">
+												<div class="search__card__body">
+													<div class="search__card__image">
+														<img src="./img/github.png" alt="" />
+													</div>
+													<ul class="search__card__data">
+														<li class="search__card__item search__card__item--bold">Company name</li>
+														<li class="search__card__item"><span>Address:</span>Some address</li>
+														<li class="search__card__item"><span>Industry:</span> Some address</li>
+														<li class="search__card__item"><span>Specialization:</span>Some address</li>
+														<li class="search__card__item"><span>Production capabilities:</span>Some address</li>
+													</ul>
+												</div>
+												<div class="search__card__desc">
+													<h3>Short introduction</h3>
+													<p>Why you should choose us. List the USP's of your company.</p>
+													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
+												</div>
+												<div class="search__buttons">
+													<a class="btn btn--light" href="">Read more</a>
+													<a class="btn btn--dark" href="">Watch on map</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="companies__column map__column">
+							<div class="companies__map">
+								<div id="map"></div>
+							</div>
+						</div>
+					</div>
+					<div class="companies__pagination pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a class="pagination__link" href=""
+									><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+										<path
+											d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
+										/></svg
+								></a>
+							</li>
+							<li class="pagination__item active">
+								<a class="pagination__link" href="">1</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="">2</a>
+							</li>
+							<li class="pagination__item dots">
+								<a class="pagination__link" href="">...</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="">4</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href=""
+									><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+										<path
+											d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+										/></svg
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="footer__container">
@@ -123,6 +264,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.slim.js"
+			integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+			crossorigin="anonymous"
+		></script>
 		<script src="./js/script.js"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC774-F7eBcRV4KMdyg4MNj4hPqn-bBSAY&amp;callback=initMap"></script>
 	</body>
 </html>
