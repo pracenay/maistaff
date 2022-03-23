@@ -7,6 +7,8 @@
 @import 'profile.scss';
 @import 'careers.scss';
 @import 'create-acc.scss';
+@import 'privacy-policy.scss';
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -26,4 +28,7 @@ body {
 	@media screen and (max-width: 450px) {
 		padding: 0 8px;
 	}
+}
+main {
+	min-height: calc(100vh - 79px);
 }
