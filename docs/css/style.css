@@ -1019,6 +1019,7 @@
   border-radius: 7px;
   padding: 16px;
   font-size: 16px;
+  border: 1px solid #b39d89;
 }
 .section-companies .companies__filter__search-bar .input__box input::-webkit-input-placeholder {
   font-style: italic;
@@ -1932,6 +1933,81 @@
             transform: rotate(360deg);
   }
 }
+.faq-section {
+  padding: 100px 0 60px;
+}
+.faq-section__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.faq__accordion {
+  width: 100%;
+  margin: 20px auto;
+}
+.faq__accordion-item {
+  background-color: #fff;
+  color: #000;
+  margin: 20px 0;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 678px) {
+  .faq__accordion-item {
+    margin: 10px 0;
+  }
+}
+.faq__accordion-item-header {
+  padding: 12px 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.faq__accordion-item-header h3 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+}
+@media screen and (max-width: 678px) {
+  .faq__accordion-item-header h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.faq__accordion-item-header i {
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.faq__accordion-item-header.active i {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.faq__accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+.faq__accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid #b39d89;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1942,6 +2018,7 @@
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
+  background-color: #fff1ea;
 }
 
 .wrapper {

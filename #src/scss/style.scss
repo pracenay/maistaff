@@ -9,6 +9,7 @@
 @import 'create-acc.scss';
 @import 'privacy-policy.scss';
 @import 'contact.scss';
+@import 'faq.scss';
 
 * {
 	box-sizing: border-box;
@@ -18,6 +19,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
+	background-color: #fff1ea;
 }
 .wrapper {
 	max-width: 1240px;
