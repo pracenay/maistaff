@@ -6,7 +6,7 @@
 @import 'companies.scss';
 @import 'profile.scss';
 @import 'careers.scss';
-
+@import 'create-acc.scss';
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -15,4 +15,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
+}
+.wrapper {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media screen and (max-width: 678px) {
+		padding: 0 12px;
+	}
+	@media screen and (max-width: 450px) {
+		padding: 0 8px;
+	}
 }

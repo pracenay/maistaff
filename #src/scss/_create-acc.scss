@@ -1,0 +1,37 @@
+.create-acc-main .intro-section {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/log-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.create-acc-main .section-cards .card__text-content ul {
+	padding: 12px 0 20px 12px;
+}
+.create-acc-main .section-cards .card__text-content ul li {
+	position: relative;
+
+	& + li {
+		margin-top: 15px;
+	}
+}
+
+.create-acc-main .section-cards .cards__item {
+	width: 50%;
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
+}
+.create-acc-main .section-cards .cards__item .card__link {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	a {
+		font-weight: 400;
+		color: #fff;
+		&:hover::after {
+			display: none;
+		}
+	}
+}
