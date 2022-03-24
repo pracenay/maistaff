@@ -101,7 +101,7 @@
 			}
 		}
 	}
-	.delete-profile {
+	.profile-actions {
 		padding-top: 30px;
 		display: flex;
 		align-items: center;
@@ -122,12 +122,11 @@
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.23);
 	z-index: 909090;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 0.2s ease;
 	.modal-window {
 		max-width: 400px;
 		width: 100%;
@@ -158,6 +157,26 @@
 			right: 14px;
 			top: 10px;
 			cursor: pointer;
+		}
+	}
+}
+
+.saved__companies {
+	.search__list {
+		flex-wrap: wrap;
+		gap: unset;
+		flex-direction: row;
+		justify-content: space-between;
+		@media screen and (max-width: 872px) {
+			flex-direction: column;
+		}
+	}
+	li.search__item {
+		width: 50%;
+		padding: 10px;
+		@media screen and (max-width: 872px) {
+			width: 100%;
+			padding: 10px 0;
 		}
 	}
 }
