@@ -1,5 +1,5 @@
 .section-login {
-	height: 100vh;
+	height: calc(100vh - 90px);
 	width: 100%;
 	background-image: url('../img/log-bg.jpg');
 	background-size: cover;
@@ -29,12 +29,7 @@
 			backdrop-filter: blur(25px);
 			border-radius: 20px;
 		}
-		&__title h2 {
-			color: #000;
-			font-weight: 400;
-			font-size: 30px;
-			line-height: 35px;
-		}
+
 		&__form {
 			width: 100%;
 			display: flex;

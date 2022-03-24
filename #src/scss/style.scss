@@ -33,5 +33,47 @@ body {
 	}
 }
 main {
-	min-height: calc(100vh - 79px);
+	min-height: calc(100vh - 90px);
+}
+
+.title-h1 {
+	font-size: 60px;
+	line-height: 68px;
+	font-weight: 600;
+	@media screen and (max-width: 768px) {
+		font-size: 46px;
+		line-height: 50px;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 38px;
+		line-height: 44px;
+	}
+}
+
+.title-h2 {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 400;
+	@media screen and (max-width: 768px) {
+		font-size: 32px;
+		line-height: 34px;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+.title-h3 {
+	font-size: 26px;
+	line-height: 28px;
+	font-weight: 400;
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 26px;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 22px;
+		line-height: 24px;
+	}
 }

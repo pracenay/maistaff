@@ -1,9 +1,7 @@
 .section-profile {
 	padding: 100px 0 60px;
-	&__title h2 {
+	&__title h1 {
 		text-align: center;
-		font-size: 40px;
-		font-weight: 400;
 	}
 	.wrapper {
 		max-width: 1240px;
@@ -22,9 +20,6 @@
 	}
 	.data {
 		&__title {
-			font-size: 26px;
-			font-weight: 400;
-			line-height: 36px;
 			@media screen and (max-width: 678px) {
 				text-align: center;
 			}

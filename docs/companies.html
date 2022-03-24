@@ -4,11 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display&display=swap" rel="stylesheet" /> -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -22,7 +18,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="stylesheet"
@@ -52,7 +53,6 @@
 							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Free text</a></li>
 							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Industry</a></li>
 							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
-							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
 							<li class="navigation__list__item"><a href="/" class="navigation__list__link">My page</a></li>
 						</ul>
 						<div class="navigation__search">
@@ -80,7 +80,6 @@
 							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Free text</a></li>
 							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Industry</a></li>
 							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
-							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
 							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">My Page</a></li>
 						</ul>
 						<div class="navigation__search">
@@ -107,18 +106,18 @@
 					<div class="companies">
 						<div class="companies__column">
 							<div class="companies__block">
-								<div class="companies__filter__search-bar input">
+								<!-- <div class="companies__filter__search-bar input">
 									<div class="input__box">
 										<input type="text" placeholder="Search..." />
 										<button><i class="fa-solid fa-magnifying-glass"></i></button>
 									</div>
-								</div>
+								</div> -->
 								<div class="companies__filter__sort-bar">
 									<select id="year">
 										<option value="hide">Sort by</option>
-										<option value="2010">Recommended</option>
-										<option value="2011">Rating</option>
-										<option value="2012">Featured</option>
+										<option value="recommended">Recommended</option>
+										<option value="rating">Rating</option>
+										<option value="featured">Featured</option>
 									</select>
 								</div>
 								<div class="search__result">
@@ -198,6 +197,56 @@
 												</div>
 											</div>
 										</li>
+										<li class="search__item">
+											<div class="search__item__card search__card">
+												<div class="search__card__body">
+													<div class="search__card__image">
+														<img src="./img/intel.png" alt="" />
+													</div>
+													<ul class="search__card__data">
+														<li class="search__card__item search__card__item--bold">Company name</li>
+														<li class="search__card__item"><span>Address:</span>Some address</li>
+														<li class="search__card__item"><span>Industry:</span> Some address</li>
+														<li class="search__card__item"><span>Specialization:</span>Some address</li>
+														<li class="search__card__item"><span>Production capabilities:</span>Some address</li>
+													</ul>
+												</div>
+												<div class="search__card__desc">
+													<h3>Short introduction</h3>
+													<p>Why you should choose us. List the USP's of your company.</p>
+													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
+												</div>
+												<div class="search__buttons">
+													<a class="btn btn--light" href="">Read more</a>
+													<a class="btn btn--dark" href="">Watch on map</a>
+												</div>
+											</div>
+										</li>
+										<li class="search__item">
+											<div class="search__item__card search__card">
+												<div class="search__card__body">
+													<div class="search__card__image">
+														<img src="./img/careers-bg.jpg" alt="" />
+													</div>
+													<ul class="search__card__data">
+														<li class="search__card__item search__card__item--bold">Company name</li>
+														<li class="search__card__item"><span>Address:</span>Some address</li>
+														<li class="search__card__item"><span>Industry:</span> Some address</li>
+														<li class="search__card__item"><span>Specialization:</span>Some address</li>
+														<li class="search__card__item"><span>Production capabilities:</span>Some address</li>
+													</ul>
+												</div>
+												<div class="search__card__desc">
+													<h3>Short introduction</h3>
+													<p>Why you should choose us. List the USP's of your company.</p>
+													<p>We have been working with metals since 1875. We are a family business. Etc. Etc.</p>
+												</div>
+												<div class="search__buttons">
+													<a class="btn btn--light" href="">Read more</a>
+													<a class="btn btn--dark" href="">Watch on map</a>
+												</div>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -252,7 +301,6 @@
 							<ul class="footer__list">
 								<li class="footer__list__item"><a href="/" class="footer__list__link"> Free text</a></li>
 								<li class="footer__list__item"><a href="/" class="footer__list__link">Industry</a></li>
-								<li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
 								<li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
 								<li class="footer__list__item"><a href="/" class="footer__list__link">My page</a></li>
 							</ul>

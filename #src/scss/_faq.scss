@@ -2,8 +2,6 @@
 	padding: 100px 0 60px;
 	&__title {
 		text-align: center;
-		font-size: 40px;
-		font-weight: 400;
 	}
 }
 .faq {
@@ -11,7 +9,8 @@
 		width: 100%;
 		margin: 20px auto;
 		&-item {
-			background-color: #fff;
+			background: rgba(255, 255, 255, 0.5);
+			backdrop-filter: blur(5px);
 			color: #000;
 			margin: 20px 0;
 			border-radius: 7px;
@@ -29,13 +28,8 @@
 				position: relative;
 				cursor: pointer;
 				h3 {
-					font-size: 22px;
-					line-height: 24px;
-					font-weight: 400;
-					@media screen and (max-width: 678px) {
-						font-size: 18px;
-						line-height: 22px;
-					}
+					padding-right: 30px;
+					line-height: 36px;
 				}
 				i {
 					transition: 0.2s ease;
@@ -51,8 +45,8 @@
 				overflow: hidden;
 				transition: max-height 0.2s ease-out;
 				&-content {
-					padding: 1rem;
-					line-height: 1.5rem;
+					padding: 20px;
+					line-height: 22px;
 					border-top: 1px solid #b39d89;
 				}
 			}
