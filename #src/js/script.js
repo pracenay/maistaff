@@ -108,3 +108,25 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 		}
 	});
 });
+
+const singleCompanyBtns = document.querySelectorAll(".section-company__controls-buttons button");
+
+if (singleCompanyBtns) {
+	singleCompanyBtns.forEach(item => {
+		item.addEventListener("click", function () {
+			document.querySelector(".modal").classList.add("active");
+		});
+	});
+}
+
+if (document.querySelector(".whitelist-btn")) {
+	document.querySelector(".whitelist-btn").addEventListener("click", function () {
+		if (this.querySelector(".fa-heart").classList.contains("fa-regular")) {
+			this.querySelector(".fa-heart").classList.remove("fa-regular");
+			this.querySelector(".fa-heart").classList.add("fa-solid");
+		} else {
+			this.querySelector(".fa-heart").classList.remove("fa-solid");
+			this.querySelector(".fa-heart").classList.add("fa-regular");
+		}
+	});
+}

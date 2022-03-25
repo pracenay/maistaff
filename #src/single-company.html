@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="/">Maistaff</a>
+            </div>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list__item"><a href="/" class="navigation__list__link">Free text</a></li>
+                    <li class="navigation__list__item"><a href="/" class="navigation__list__link">Industry</a></li>
+                    <li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
+                    <li class="navigation__list__item"><a href="/" class="navigation__list__link">My page</a></li>
+                </ul>
+                <div class="navigation__search">
+                    <div class="input__box">
+                        <input type="text" placeholder="Search..." />
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                    </div>
+                </div>
+                <div class="navigation__language switcher">
+                    <ul class="language__list">
+                        <li href="">
+                            <i class="fa-solid fa-earth-americas language__icon"></i>
+                            <a href="">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mob-nav">
+                <ul class="mob-nav__list">
+                    <li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Free text</a></li>
+                    <li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Industry</a></li>
+                    <li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
+                    <li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">My Page</a></li>
+                </ul>
+                <div class="navigation__search">
+                    <div class="input__box">
+                        <input type="text" placeholder="Search..." />
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                    </div>
+                </div>
+                <div class="navigation__language switcher">
+                    <ul class="language__list">
+                        <li href="">
+                            <i class="fa-solid fa-earth-americas language__icon"></i>
+                            <a href="">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section-company">
+        <div class="wrapper">
+            <div class="section-company__block section-company__gallery">
+                <img src="img/company-big.png" alt="" class="section-company__big-img">
+                <div>
+                    <img src="img/company-small-1.png" alt="" class="section-company__small-img">
+                    <img src="img/company-small-2.png" alt="" class="section-company__small-img">
+                </div>
+            </div>
+            <div class="section-company__block section-company__description">
+                <div class="section-company__name-wrap">
+                    <img src="img/logo-company.png" alt="">
+                    <h1 class="section-company__name">Company name</h1>
+                </div>
+                <ul class="section-company__list">
+                    <li class="section-company__item"><span>Address:</span> Some address</li>
+                    <li class="section-company__item"><span>Industry:</span> Some address</li>
+                    <li class="section-company__item"><span>Specialization:</span> Some address</li>
+                </ul>
+                <ul class="section-company__controls-buttons">
+                    <li><button class="btn btn--light">Publish my page</button></li>
+                    <li><button class="btn btn--dark">Unpublish my page</button></li>
+                </ul>
+                <h2 class="section-company__title title-h2">A nice sounding title <button class="btn--edit"><i class="fa-solid fa-pencil"></i></button></h2>
+                <div class="section-company__desc">
+                    <button class="btn--edit"><i class="fa-solid fa-pencil"></i></button>
+                    <p>Explain here in more detail of who you are, what you do, when you were founded, etc. This is the place where the marketing happens.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisacing elit. Nam lacinia erat placerat feugiat mattis. Nullam tempor diam erat, vel eleifend nulla viverra in. Quisque malesuada eros facilisis pharetra pulvinar. Fusce ullamcorper ligula a neque sagittis sagittis. Nulla consectetur egestas bibendum. Fusce porttitor tempus quam, nec eleifend justo varius eget. Curabitur ac diam a nunc gravida finibus. Fusce finibus nunc tellus, eget ultrices purus molestie dignissim. Duis vitae erat vitae <a href="" class="read-more">..read more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-map">
+        <div class="wrapper">
+            <div class="companies__column map__column">
+                <div class="companies__map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal">
+    <div class="modal-window">
+        <div class="modal-window__body">
+            <p>You are currently editing your profile page! Please make sure to save your changes before exiting.</p>
+            <div class="modal-window__btns">
+                <button class="btn btn--green">Save changes</button>
+                <button class="btn btn--red">Cancel</button>
+            </div>
+        </div>
+        <div class="modal-close-btn">
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__container">
+            <div class="footer__logo">Maistaff</div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <ul class="footer__list">
+                        <li class="footer__list__item"><a href="/" class="footer__list__link"> Free text</a></li>
+                        <li class="footer__list__item"><a href="/" class="footer__list__link">Industry</a></li>
+                        <li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
+                        <li class="footer__list__item"><a href="/" class="footer__list__link">My page</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                <span>2022 &copy; Admiral Studios</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+        crossorigin="anonymous"
+></script>
+<script src="./js/script.js"></script>
+<script src="./js/select.js"></script>
+
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC774-F7eBcRV4KMdyg4MNj4hPqn-bBSAY&amp;callback=initMap"></script>
+</body>
+</html>
