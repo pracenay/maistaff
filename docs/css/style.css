@@ -2408,6 +2408,9 @@
 .section-company__socials li {
   margin-right: 10px;
 }
+.section-company__socials img {
+  height: 25px;
+}
 
 .whitelist-btn {
   border: none;
