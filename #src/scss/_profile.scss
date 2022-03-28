@@ -179,4 +179,14 @@
 			padding: 10px 0;
 		}
 	}
+	.search__card {
+		position: relative;
+	}
+
+	.search__card .remove-saved-btn {
+		position: absolute;
+		right: 14px;
+		top: 10px;
+		cursor: pointer;
+	}
 }

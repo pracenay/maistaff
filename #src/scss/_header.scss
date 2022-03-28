@@ -1,10 +1,9 @@
 .header {
 	position: fixed;
 	width: 100%;
-	background-color: #604f46;
+	background-color: rgba(96, 79, 70, 0.95);
 	z-index: 999999;
 	&__wrapper {
-		max-width: 1240px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
@@ -14,6 +13,9 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 21px 0;
+	}
+	&__logo {
+		width: 33%;
 	}
 	&__logo a {
 		font-family: 'Playfair Display', sans-serif;
@@ -27,9 +29,10 @@
 			color: #b39d89;
 		}
 	}
-	&__navigation {
-	}
+
 	.navigation {
+		width: 33%;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -42,10 +45,7 @@
 				font-weight: 400;
 				font-size: 15px;
 				line-height: 18px;
-				margin-right: 56px;
-				&:last-child {
-					margin-right: 30px;
-				}
+				margin-right: 28px;
 			}
 			&__link {
 				text-decoration: none;
@@ -58,6 +58,8 @@
 			}
 		}
 		&__search {
+			max-width: 250px;
+			width: 100%;
 			.input__box {
 				position: relative;
 				input {
@@ -82,7 +84,6 @@
 			}
 		}
 		&__language {
-			margin-left: 10px;
 			.language {
 				&__list {
 					li {
@@ -248,6 +249,12 @@
 		}
 	}
 	.burger {
+		display: block;
+	}
+	.header .navigation__search {
+		display: none;
+	}
+	.header .mob-nav .navigation__search {
 		display: block;
 	}
 }

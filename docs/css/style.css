@@ -1,11 +1,10 @@
 .header {
   position: fixed;
   width: 100%;
-  background-color: #604f46;
+  background-color: rgba(96, 79, 70, 0.95);
   z-index: 999999;
 }
 .header__wrapper {
-  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -22,6 +21,9 @@
           align-items: center;
   padding: 21px 0;
 }
+.header__logo {
+  width: 33%;
+}
 .header__logo a {
   font-family: "Playfair Display", sans-serif;
   text-decoration: none;
@@ -37,6 +39,7 @@
   color: #b39d89;
 }
 .header .navigation {
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,10 +66,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  margin-right: 56px;
-}
-.header .navigation__list__item:last-child {
-  margin-right: 30px;
+  margin-right: 28px;
 }
 .header .navigation__list__link {
   text-decoration: none;
@@ -77,6 +77,10 @@
 }
 .header .navigation__list__link:hover {
   color: #b39d89;
+}
+.header .navigation__search {
+  max-width: 250px;
+  width: 100%;
 }
 .header .navigation__search .input__box {
   position: relative;
@@ -112,9 +116,6 @@
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   color: #b39d89;
-}
-.header .navigation__language {
-  margin-left: 10px;
 }
 .header .navigation__language .language__list li {
   display: -webkit-box;
@@ -317,6 +318,14 @@
   .burger {
     display: block;
   }
+
+  .header .navigation__search {
+    display: none;
+  }
+
+  .header .mob-nav .navigation__search {
+    display: block;
+  }
 }
 .footer {
   background: #604f46;
@@ -376,8 +385,19 @@
   color: #fff;
 }
 .footer__copyright {
-  width: 20%;
-  text-align: right;
+  border-top: 1px solid;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -395,9 +415,7 @@
   .footer__copyright {
     width: 100%;
     text-align: center;
-    padding-top: 10px;
     margin-top: 10px;
-    border-top: 1px solid;
   }
   .footer__list {
     -webkit-box-orient: vertical;
@@ -1612,6 +1630,15 @@
     width: 100%;
     padding: 10px 0;
   }
+}
+.saved__companies .search__card {
+  position: relative;
+}
+.saved__companies .search__card .remove-saved-btn {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .careers-section {
