@@ -43,22 +43,18 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__wrapper">
+			<div class="header__wrapper wrapper">
 				<div class="header__container">
 					<div class="header__logo">
 						<a href="/">Maistaff</a>
 					</div>
-					<div class="navigation__search">
-						<div class="input__box">
-							<input type="text" placeholder="Search..." />
-							<i class="fa-solid fa-magnifying-glass search__icon"></i>
-						</div>
-					</div>
+
 					<nav class="header__navigation navigation">
 						<ul class="navigation__list">
-							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Free text</a></li>
-							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Industry</a></li>
-							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Location</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Home</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">About us</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Careers</a></li>
+							<li class="navigation__list__item"><a href="/" class="navigation__list__link">Create Account</a></li>
 							<li class="navigation__list__item"><a href="/" class="navigation__list__link">My page</a></li>
 						</ul>
 
@@ -78,17 +74,12 @@
 					</div>
 					<div class="mob-nav">
 						<ul class="mob-nav__list">
-							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Free text</a></li>
-							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Industry</a></li>
-							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Location</a></li>
-							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">My Page</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Home</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">About us</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Careers</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">Create Account</a></li>
+							<li class="mob-nav__list__item"><a href="/" class="mob-nav__list__link">My page</a></li>
 						</ul>
-						<div class="navigation__search">
-							<div class="input__box">
-								<input type="text" placeholder="Search..." />
-								<i class="fa-solid fa-magnifying-glass search__icon"></i>
-							</div>
-						</div>
 						<div class="navigation__language switcher">
 							<ul class="language__list">
 								<li href="">
@@ -104,7 +95,7 @@
 		<main>
 			<section class="intro-section section">
 				<div class="intro">
-					<div class="intro__block">
+					<div class="intro__block full">
 						<div class="intro__title">
 							<h1 class="title-h1">Who are we, and what is this service?</h1>
 						</div>
@@ -121,6 +112,42 @@
 								So, here is our promise; we will help you to find your new producers or your new buyers. Whether you own a factory, or you are looking
 								for a factory, this is the place for you. The basic functions on this site are completely free!
 							</p>
+						</div>
+						<div class="intro-sub-block">
+							<div class="search__container">
+								<div class="search__input">
+									<input type="text" placeholder="Free text..." />
+								</div>
+								<div class="search">
+									<div class="search__select">
+										<select id="year">
+											<option value="hide">Industry</option>
+											<option value="recommended">Recommended</option>
+											<option value="rating">Rating</option>
+											<option value="featured">Featured</option>
+											<option value="recommended">Recommended</option>
+											<option value="rating">Rating</option>
+											<option value="featured">Featured</option>
+											<option value="recommended">Recommended</option>
+											<option value="rating">Rating</option>
+											<option value="featured">Featured</option>
+										</select>
+									</div>
+								</div>
+								<div class="search">
+									<div class="search__select">
+										<select id="year">
+											<option value="hide">Location</option>
+											<option value="recommended">Germany</option>
+											<option value="rating">Italy</option>
+											<option value="featured">France</option>
+										</select>
+									</div>
+								</div>
+								<div class="search-btn">
+									<button href="/" class="btn btn--light">Search</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -206,7 +233,7 @@
 								<div class="owl-item">
 									<div class="item">
 										<a href="/" class="item__image">
-											<img src="./img/nvidia.png" alt="" />
+											<img src="./img/github.png" alt="" />
 										</a>
 									</div>
 								</div>
@@ -231,9 +258,10 @@
 					<nav class="footer__nav">
 						<ul class="footer__list">
 							<ul class="footer__list">
-								<li class="footer__list__item"><a href="/" class="footer__list__link"> Free text</a></li>
-								<li class="footer__list__item"><a href="/" class="footer__list__link">Industry</a></li>
-								<li class="footer__list__item"><a href="/" class="footer__list__link">Location</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Home</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">About us</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Careers</a></li>
+								<li class="footer__list__item"><a href="/" class="footer__list__link">Create Account</a></li>
 								<li class="footer__list__item"><a href="/" class="footer__list__link">My page</a></li>
 								<li class="footer__list__item"><a href="/" class="footer__list__link">Terms & Conditions</a></li>
 							</ul>
@@ -245,7 +273,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/script.js"></script>
+
 		<script
 			src="https://code.jquery.com/jquery-3.6.0.slim.js"
 			integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
@@ -263,7 +291,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-
+		<script src="./js/script.js"></script>
+		<script src="./js/select.js"></script>
 		<script>
 			var owl = $('.owl-carousel');
 			owl.owlCarousel({

@@ -79,3 +79,18 @@ main {
 		line-height: 24px;
 	}
 }
+
+#custom-scrollabar::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+}
+
+#custom-scrollabar::-webkit-scrollbar {
+	width: 4px;
+	background-color: transparent;
+}
+
+#custom-scrollabar::-webkit-scrollbar-thumb {
+	background-color: #555555;
+	border-radius: 8px;
+}

@@ -4,6 +4,7 @@
 	background-color: rgba(96, 79, 70, 0.95);
 	z-index: 999999;
 	&__wrapper {
+		max-width: 1240px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
@@ -15,7 +16,7 @@
 		padding: 21px 0;
 	}
 	&__logo {
-		width: 33%;
+		width: 100%;
 	}
 	&__logo a {
 		font-family: 'Playfair Display', sans-serif;
@@ -31,10 +32,10 @@
 	}
 
 	.navigation {
-		width: 33%;
+		width: 100%;
 
 		display: flex;
-		justify-content: center;
+		justify-content: end;
 		align-items: center;
 		&__list {
 			display: flex;
@@ -245,6 +246,7 @@
 			}
 		}
 		.navigation__language {
+			margin-top: 30px;
 			margin-left: 0;
 		}
 	}

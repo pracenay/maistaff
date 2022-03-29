@@ -11,6 +11,7 @@ $('select').each(function () {
 
 	var $list = $('<ul />', {
 		class: 'select-options',
+		id: 'custom-scrollabar',
 	}).insertAfter($styledSelect);
 
 	for (var i = 0; i < numberOfOptions; i++) {
